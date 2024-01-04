@@ -2,6 +2,7 @@
 layout: post
 title:  "Tour de Force"
 date:   2024-01-02 13:44:47 +0100
+published: false
 categories: gadget cloud aws go
 ---
 
