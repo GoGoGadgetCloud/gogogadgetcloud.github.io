@@ -46,14 +46,12 @@ Consider the language performance in serverless environments:
 ![popularity](/images/popularity.png "Language Popularity (by datadog)"){:class="img-responsive"}
 
 Taken from [Datadog](https://www.datadoghq.com/state-of-serverless/) Updated August 2023
-{.info}
 
 The flexibility of the languages allow some _magical_ things to be built into the deployment frameworks, but they come at a high cost: 
 
 ![performance](/images/all_languages_performance.png "Performance in Execution Time with Various Memory Profiles"){:class="img-responsive"}
 
 Taken from [Scanner.dev](https://blog.scanner.dev/serverless-speed-rust-vs-go-java-python-in-aws-lambda-functions/) Updated March 2023
-{.info}
 
 While we shouldn't overemphasize a single benchmark, the trend is clear. Go requires about half the memory and is 4 to 6 times faster than Python or Java, offering significant cost savings.
 
