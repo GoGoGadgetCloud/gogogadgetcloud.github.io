@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "Setup"
+date:   2024-01-03 13:44:47 +0100
+categories: gadget cloud aws go
+---
+
+# Setup
+
+## Getting the code
+
+You need to checkout three projects for now:
+
+- [Gadget](https://github.com/GoGoGadgetCloud/gadget) The main library which you embed into your application
+- [Gadget-Cli](https://github.com/GoGoGadgetCloud/gadget-cli) An application used to manage and deploy your application
+- [Gadget-Demo](https://github.com/GoGoGadgetCloud/gadget-demo) The demo application - currently the only "supported" one.
+
+This is in an extremely pre-alpha stage, to gauge the feedback from the AWS and Go community and is far beyond any usage. See the roadmap for details. 
+{.warning}
+
+## Preparing for Use
+
+The `gadget-cli` and the `gadget` library could be releases as modules, but due to the rapid development of the interfaces and contracts, its best to use locale dependencies. We use a `go.work` setup for this:
+
+```
+go 1.21.5
+
+use (
+        ./gadget
+        ./gadget-cli
+        ./gadget-demo
+)
+```
